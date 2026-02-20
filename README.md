@@ -124,3 +124,4 @@ Desenvolvido com ❤️ para amantes de doces!
 ---
 
 ### Aproveite sua galeria de doces! 🍰🍫🎂
+# Galeria-de-Doces
