@@ -1,0 +1,156 @@
+:root {
+  --bg: #fcfcfc;
+  --card: #ffffff;
+  --text: #1f1f1f;
+  --muted: #6f6f6f;
+  --red: #e60023;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  min-height: 100%;
+  font-family: "DM Sans", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.app {
+  width: min(1380px, 96%);
+  margin: 0 auto 30px;
+}
+
+.top {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: grid;
+  grid-template-columns: auto auto 1fr;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 0;
+  background: rgba(252, 252, 252, 0.92);
+  backdrop-filter: blur(6px);
+}
+
+.logo {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  color: #fff;
+  font-weight: 800;
+  background: var(--red);
+}
+
+.top h1 {
+  margin: 0;
+  font-size: 1.15rem;
+  font-weight: 800;
+}
+
+.top input {
+  width: 100%;
+  border: none;
+  background: #efefef;
+  border-radius: 999px;
+  height: 46px;
+  padding: 0 18px;
+  font-size: 1rem;
+}
+
+.top input:focus {
+  outline: 2px solid #b7d7ff;
+}
+
+.masonry {
+  column-count: 5;
+  column-gap: 14px;
+  margin-top: 8px;
+}
+
+.pin {
+  break-inside: avoid;
+  margin: 0 0 14px;
+  border-radius: 18px;
+  overflow: hidden;
+  background: var(--card);
+  position: relative;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+.pin img {
+  width: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.pin-short img {
+  height: 210px;
+}
+
+.pin-mid img {
+  height: 300px;
+}
+
+.pin-tall img {
+  height: 390px;
+}
+
+.pin button {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  border: none;
+  border-radius: 999px;
+  padding: 10px 14px;
+  font-weight: 700;
+  color: #fff;
+  background: var(--red);
+  opacity: 0;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.pin p {
+  margin: 10px 12px 13px;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.pin:hover button {
+  opacity: 1;
+}
+
+@media (max-width: 1200px) {
+  .masonry {
+    column-count: 4;
+  }
+}
+
+@media (max-width: 900px) {
+  .masonry {
+    column-count: 3;
+  }
+}
+
+@media (max-width: 640px) {
+  .top {
+    grid-template-columns: auto 1fr;
+  }
+
+  .top h1 {
+    display: none;
+  }
+
+  .masonry {
+    column-count: 2;
+    column-gap: 10px;
+  }
+}

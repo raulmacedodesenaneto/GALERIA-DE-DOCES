@@ -1,0 +1,158 @@
+.btn-sobre {
+  padding: 8px 16px;
+  background: transparent;
+  color: white;
+  border: 2px solid white;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+.btn-sobre:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: scale(1.05);
+}
+
+.modal-overlay-sobre {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 2000;
+}
+
+.modal-sobre {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2001;
+  width: 90%;
+  max-width: 600px;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.modal-conteudo-sobre {
+  background: white;
+  border-radius: 15px;
+  padding: 40px;
+  position: relative;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+}
+
+.btn-fechar-modal {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.btn-fechar-modal:hover {
+  transform: scale(1.2);
+}
+
+.modal-conteudo-sobre h2 {
+  color: #FF69B4;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+}
+
+.sobre-texto {
+  color: #333;
+  line-height: 1.8;
+}
+
+.sobre-texto p {
+  margin-bottom: 15px;
+  font-size: 0.95rem;
+}
+
+.sobre-texto h3 {
+  color: #FF69B4;
+  margin-top: 25px;
+  margin-bottom: 12px;
+  font-size: 1.2rem;
+}
+
+.sobre-texto ul {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.sobre-texto li {
+  padding: 8px 0;
+  margin-left: 0;
+  font-size: 0.95rem;
+}
+
+.contato-info {
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 8px;
+  border-left: 4px solid #FF69B4;
+  margin: 15px 0;
+}
+
+.contato-info p {
+  margin: 8px 0;
+  font-size: 0.95rem;
+}
+
+.redes-sociais {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 12px;
+}
+
+.rede-btn {
+  padding: 8px 16px;
+  background: linear-gradient(135deg, #FF69B4, #FF1493);
+  color: white;
+  border: none;
+  border-radius: 20px;
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s;
+  font-size: 0.9rem;
+}
+
+.rede-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(255, 105, 180, 0.4);
+}
+
+@media (max-width: 480px) {
+  .modal-conteudo-sobre {
+    padding: 25px;
+  }
+
+  .modal-conteudo-sobre h2 {
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+  }
+
+  .sobre-texto h3 {
+    font-size: 1rem;
+  }
+
+  .redes-sociais {
+    flex-direction: column;
+  }
+
+  .rede-btn {
+    width: 100%;
+    text-align: center;
+  }
+}

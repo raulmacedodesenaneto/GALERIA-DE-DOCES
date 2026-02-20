@@ -1,0 +1,266 @@
+.carrinho-container {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 1000;
+}
+
+.btn-carrinho-flutuante {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #FF69B4, #FF1493);
+  color: white;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(255, 105, 180, 0.4);
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.btn-carrinho-flutuante:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 20px rgba(255, 105, 180, 0.6);
+}
+
+.btn-carrinho-flutuante:active {
+  transform: scale(0.95);
+}
+
+.carrinho-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+.carrinho-modal {
+  position: absolute;
+  bottom: 90px;
+  right: 0;
+  width: 400px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  max-height: 600px;
+  z-index: 1001;
+}
+
+.carrinho-header {
+  background: linear-gradient(135deg, #FF69B4, #FF1493);
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.carrinho-header h2 {
+  margin: 0;
+  font-size: 1.3rem;
+}
+
+.btn-fechar {
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.btn-fechar:hover {
+  transform: scale(1.2);
+}
+
+.carrinho-conteudo {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.carrinho-itens {
+  flex: 1;
+  overflow-y: auto;
+  padding: 15px;
+  max-height: 350px;
+}
+
+.carrinho-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  background: #f9f9f9;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ffe4f5;
+  transition: all 0.2s;
+}
+
+.carrinho-item:hover {
+  background: #fff0f5;
+  border-color: #FF69B4;
+}
+
+.item-emoji {
+  font-size: 2rem;
+  min-width: 40px;
+}
+
+.item-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.item-nome {
+  margin: 0;
+  font-weight: bold;
+  color: #2C3E50;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.item-categoria {
+  margin: 3px 0 0 0;
+  font-size: 0.75rem;
+  color: #FF69B4;
+  text-transform: uppercase;
+}
+
+.btn-remover {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 1.1rem;
+  transition: transform 0.2s;
+}
+
+.btn-remover:hover {
+  transform: scale(1.2);
+}
+
+.carrinho-vazio {
+  padding: 40px 20px;
+  text-align: center;
+  color: #999;
+}
+
+.carrinho-vazio p {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.subtexto {
+  font-size: 0.9rem;
+  margin-top: 10px;
+}
+
+.carrinho-resumo {
+  padding: 15px;
+  border-top: 1px solid #ffe4f5;
+  background: #fff9fc;
+}
+
+.total-itens {
+  margin: 0;
+  text-align: center;
+  color: #2C3E50;
+  font-size: 0.95rem;
+}
+
+.carrinho-acoes {
+  padding: 15px;
+  border-top: 1px solid #ffe4f5;
+  display: flex;
+  gap: 10px;
+  background: white;
+}
+
+.btn-comprar {
+  flex: 1;
+  padding: 12px;
+  background: linear-gradient(135deg, #4CAF50, #45a049);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s;
+}
+
+.btn-comprar:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(76, 175, 80, 0.3);
+}
+
+.btn-limpar {
+  flex: 1;
+  padding: 12px;
+  background: #f5f5f5;
+  color: #666;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s;
+}
+
+.btn-limpar:hover {
+  background: #ffe4f5;
+  color: #FF69B4;
+}
+
+@media (max-width: 768px) {
+  .carrinho-container {
+    bottom: 20px;
+    right: 20px;
+  }
+
+  .btn-carrinho-flutuante {
+    width: 60px;
+    height: 60px;
+    font-size: 1.3rem;
+  }
+
+  .carrinho-modal {
+    width: 350px;
+  }
+
+  .carrinho-itens {
+    max-height: 280px;
+  }
+}
+
+@media (max-width: 480px) {
+  .carrinho-modal {
+    width: 90vw;
+    right: 5vw;
+    bottom: 80px;
+  }
+
+  .btn-carrinho-flutuante {
+    width: 60px;
+    height: 60px;
+    font-size: 1.2rem;
+  }
+
+  .carrinho-header h2 {
+    font-size: 1.1rem;
+  }
+
+  .carrinho-itens {
+    max-height: 300px;
+  }
+}
