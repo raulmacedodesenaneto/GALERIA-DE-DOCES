@@ -68,30 +68,30 @@ src/
 
 ### Chocolates 🍫
 
-- Brigadeiro - R$ 3.50
-- Beijinho - R$ 3.50
+- Brigadeiro 
+- Beijinho 
 
 ### Bolos 🍰
 
-- Pavê - R$ 28.00
-- Bolo de Chocolate - R$ 35.00
-- Torta de Morango - R$ 45.00
-- Cheesecake - R$ 40.00
+- Pavê 
+- Bolo de Chocolate 
+- Torta de Morango
+- Cheesecake
 
 ### Pudins ⭐
 
-- Pudim de Leite - R$ 12.00
-- Pudim de Chocolate - R$ 12.00
+- Pudim de Leite 
+- Pudim de Chocolate 
 
 ### Confeitaria ✨
 
-- Açúcar de Ouro - R$ 8.00
-- Bem-Casado - R$ 2.50
-- Paçoca - R$ 4.00
+- Açúcar de Ouro
+- Bem-Casado 
+- Paçoca 
 
 ### Gelados 🍦
 
-- Sorvete - R$ 15.00
+- Sorvete  
 
 ## Personalizações Possíveis
 
